@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumlah Siswa Bertambah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f9;
+        }
+
+        .counter {
+            font-size: 50px;
+            font-weight: bold;
+            color: #4CAF50;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .scroll-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fff;
+        }
+
+        .content {
+            height: 2000px; /* Agar halaman dapat di-scroll */
+            background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scroll-container">
+        <div class="counter" id="counter">100</div>
+        <div class="content"></div>
+    </div>
+
+    <script>
+        let count = 100;
+        const counterElement = document.getElementById('counter');
+        let isCounting = false;
+
+        // Fungsi untuk memulai penghitungannya saat halaman discroll
+        function startCounting() {
+            if (isCounting) return;
+            isCounting = true;
+
+            const target = 500; // Target jumlah siswa yang ingin dicapai
+            const interval = 100; // Interval waktu per penambahan angka (ms)
+            const increment = Math.ceil(target / 100); // Penambahan per interval
+
+            const increaseCount = setInterval(() => {
+                if (count < target) {
+                    count += increment;
+                    counterElement.textContent = count;
+                } else {
+                    clearInterval(increaseCount);
+                }
+            }, interval);
+        }
+
+        // Event listener saat halaman di-scroll
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const triggerPosition = 200; // Posisi scroll yang memicu penghitungannya
+
+            if (scrollPosition > triggerPosition) {
+                startCounting();
+            }
+        });
+    </script>
+
+</body>
+</html>

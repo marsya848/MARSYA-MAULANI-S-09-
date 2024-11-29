@@ -1,0 +1,11 @@
+.welcome-container {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+}

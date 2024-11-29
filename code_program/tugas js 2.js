@@ -1,0 +1,10 @@
+confirm("apakah anda ingin mengisiskan nama anda?");
+var nama= prompt("masukkan nama anda?", "");
+document.write("<p>hallo "+ nama +"</p>");
+document.write("<p>hallo "+ nama +"</p>");
+document.write("<p>hallo "+ nama +"</p>");
+document.write("<p>hallo "+ nama +"</p>");
+document.write("<p>hallo "+ nama +"</p>");
+document.write("<p>hallo "+ nama +"</p>");
+document.write("<p>hallo "+ nama +"</p>");
+alert("hallo " + nama );

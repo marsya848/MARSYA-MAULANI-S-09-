@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header */
+.header-container {
+  background-color: green;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+.contact-button {
+  background-color: #fff;
+  color: green;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Main Banner */
+.banner {
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.banner p {
+  margin: 10px 0;
+}
+
+.explore-button {
+  background-color: #fff;
+  color: green;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Reasons to Join */
+.reasons {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.reasons h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.reasons-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.reason {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.reason img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Principal Section */
+.principal {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.principal-img {
+  width: 100px;
+  height: auto;
+  border-radius: 100%;
+}
+
+h6, h4 {
+color: darkred;
+font-family: 'Times New Roman', Times, serif;
+}

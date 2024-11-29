@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>karakter pixel</title>
+    <style>
+        /* Mengatur tata letak agar berada di tengah */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282C34;
+            margin: 0;
+        }
+
+        .pixel-art {
+            display: grid;
+            grid-template-columns: repeat(10, 20px);
+            grid-template-rows: repeat(10, 20px);
+            gap: 1px; /* Menambah jarak antar pixel */
+        }
+
+        .pixel {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Warna untuk setiap piksel */
+        .black { background-color: black; }
+        .pink { background-color: yellow; }
+        .white { background-color: white; }
+        .red { background-color: chocolate; } 
+        .blue { background-color: blue; }
+        .dark-blue { background-color: #2C2C54; }
+        .orange { background-color: rgb(138, 94, 11); }
+    </style>
+</head>
+<body>
+
+<div class="pixel-art">
+    <!-- Baris 1 -->
+    <div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div>
+    <!-- Baris 2 -->
+    <div class="pixel black"></div><div class="pixel black"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel black"></div><div class="pixel black"></div>
+    <!-- Baris 3 -->
+    <div class="pixel black"></div><div class="pixel black"></div><div class="pixel white"></div><div class="pixel white"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel white"></div><div class="pixel white"></div><div class="pixel black"></div><div class="pixel black"></div>
+    <!-- Baris 4 -->
+    <div class="pixel black"></div><div class="pixel white"></div><div class="pixel white"></div><div class="pixel white"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel white"></div><div class="pixel white"></div><div class="pixel white"></div><div class="pixel black"></div>
+    <!-- Baris 5 -->
+    <div class="pixel black"></div><div class="pixel dark-blue"></div><div class="pixel white"></div><div class="pixel white"></div><div class="pixel pink"></div><div class="pixel pink"></div><div class="pixel white"></div><div class="pixel white"></div><div class="pixel dark-blue"></div><div class="pixel black"></div>
+    <!-- Baris 6 -->
+    <div class="pixel black"></div><div class="pixel dark-blue"></div><div class="pixel white"></div><div class="pixel white"></div><div class="pixel orange"></div><div class="pixel orange"></div><div class="pixel white"></div><div class="pixel white"></div><div class="pixel dark-blue"></div><div class="pixel black"></div>
+    <!-- Baris 7 -->
+    <div class="pixel black"></div><div class="pixel dark-blue"></div><div class="pixel dark-blue"></div><div class="pixel dark-blue"></div><div class="pixel orange"></div><div class="pixel orange"></div><div class="pixel dark-blue"></div><div class="pixel dark-blue"></div><div class="pixel dark-blue"></div><div class="pixel black"></div>
+    <!-- Baris 8 -->
+    <div class="pixel black"></div><div class="pixel dark-blue"></div><div class="pixel blue"></div><div class="pixel dark-blue"></div><div class="pixel dark-blue"></div><div class="pixel dark-blue"></div><div class="pixel dark-blue"></div><div class="pixel blue"></div><div class="pixel dark-blue"></div><div class="pixel black"></div>
+    <!-- Baris 9 -->
+    <div class="pixel black"></div><div class="pixel black"></div><div class="pixel blue"></div><div class="pixel blue"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel blue"></div><div class="pixel blue"></div><div class="pixel black"></div><div class="pixel black"></div>
+    <!-- Baris 10 -->
+    <div class="pixel black"></div><div class="pixel black"></div><div class="pixel red"></div><div class="pixel red"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel red"></div><div class="pixel red"></div><div class="pixel black"></div><div class="pixel black"></div>
+</div>
+
+</body>
+</html>
